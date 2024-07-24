@@ -12,6 +12,10 @@
 # production
 /build
 
+AmazonRootCA1.pem
+certificate.pem.crt 
+private.pem.key
+
 # misc
 .DS_Store
 .env.local
