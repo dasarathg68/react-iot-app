@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Mqtt5 from "./utils/Mqtt5";
 
 export default function App() {
   const [subscribeTopic, setSubscribeTopic] = useState();
@@ -16,8 +17,7 @@ export default function App() {
   };
   return (
     <div className="min-h-screen">
-      <div className="flex gap-4 m-10">
-        {/* Subscribe Settings */}
+      {/* <div className="flex gap-4 m-10">
         <div className="card bg-base-100 w-96 shadow-lg border">
           <div className="card-body">
             <h2 className="flex card-title justify-center">
@@ -41,7 +41,6 @@ export default function App() {
             </div>
           </div>
         </div>{" "}
-        {/* Publish Settings */}
         <div className="card bg-base-100 w-96 shadow-lg border">
           <div className="card-body">
             <h2 className="flex card-title justify-center">Publish Settings</h2>
@@ -81,7 +80,11 @@ export default function App() {
             </div>
           </div>
         </div>
-      </div>
+        <div>
+        </div>
+      </div> */}
+      <Mqtt5 />
+      {/* <Demo2 /> */}
     </div>
   );
 }
